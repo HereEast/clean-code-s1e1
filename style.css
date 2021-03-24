@@ -2,37 +2,35 @@
 
 body {
     background-color: #f8f8f8;
-    color: #333;
     font-family: "Lato", sans-serif;
+    color: #333333;
 }
 
-.header {
+.wrapper {
     width: 500px;
     margin: 0 auto;
     display: block;
-    text-align: right;
 }
+
 .header img {
     width: 100%;
 }
 
 .details-link {
-    font-family: fantasy, cursive;
-}
-
-.centered-main-page-element {
+    font-family: "Fantasy", cursive;
+    text-align: right;
     display: block;
-    width: 500px;
-    margin: 0 auto 0;
+    margin-right: 0;
 }
 
-.task {
+
+.add-item-input {
     width: 56%;
     display: inline-block;
     flex-grow: 1;
 }
 
-.task-row-wrapper {
+.add-item-container {
     display: flex;
 }
 
@@ -46,33 +44,17 @@ h3 {
     list-style: none;
 }
 
-input,
-button {
+input {
     outline: none;
-}
-
-button {
-    background: none;
-    border: 0px;
-    color: #888;
-    font-size: 15px;
-    width: 60px;
-    font-family: "Lato", sans-serif;
-    cursor: pointer;
-}
-
-button:hover {
-    color: #3a3a3a;
 }
 
 /* HEADING */
 
 h3,
-label[for="new-task"] {
-    color: #333;
+.section-title {
     font-weight: 700;
     font-size: 15px;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #333333;
     padding: 30px 0 10px;
     margin: 0;
     text-transform: uppercase;
@@ -84,30 +66,25 @@ input[type="text"] {
     line-height: 18px;
     height: 21px;
     padding: 0 9px;
-    border: 1px solid #dDd;
+    border: 1px solid #dddddd;
     background: #ffffff;
     border-radius: 6px;
-    font-family: "Lato", sans-serif;
-    color: #888;
+    color: #888888;
 }
 
 input[type="text"]:focus {
-    color: #333;
+    color: #333333;
 }
 
 /* NEW TASK */
 
-label[for="new-task"] {
+.section-title {
     display: block;
     margin: 0 0 20px;
 }
 
-input#new-task {
+.add-item-input {
     width: 318px;
-}
-
-p > button:hover {
-    color: #0fc57c;
 }
 
 /* TASK LIST */
@@ -141,25 +118,12 @@ li >    input[type="text"] {
     width: 226px;
 }
 
-li > button.delete:hover {
-    color: #cf2323;
-}
-
-button.delete img {
-    height: 2em;
-    transform: rotateZ(45deg);
-    transition: transform 200ms ease-in;
-}
-
-button.delete img:hover {
-    transform: rotateZ(0);
-}
 
 /* COMPLETED */
 
 ul#completed-tasks label {
     text-decoration: line-through;
-    color: #888;
+    color: #888888;
 }
 
 /* EDIT TASK */
@@ -178,8 +142,40 @@ ul li.editMode label {
 }
 
 
+/* BUTTONS */
+
+button {
+    background: none;
+    border: 0px;
+    outline: none;
+    color: #888888;
+    font-size: 15px;
+    width: 60px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #3a3a3a;
+}
+
+.delete:hover {
+    color: #cf2323;
+}
+
+.delete img {
+    height: 2em;
+    transform: rotateZ(45deg);
+    transition: transform 200ms ease-in;
+}
+
+.delete img:hover {
+    transform: rotateZ(0);
+    color: #cf2323;
+}
+
+
 
 @media (max-width:768px) {
-    .aaa { text-align: center;
+    .header { text-align: center;
     }
-    }
+}
