@@ -30,7 +30,7 @@ body {
     flex-grow: 1;
 }
 
-.add-item-container {
+.add-item-block{
     display: flex;
 }
 
@@ -42,7 +42,6 @@ ul {
 
 /* HEADING */
 
-h3,
 .section-title {
     font-size: 15px;
     font-weight: 700;
@@ -93,25 +92,21 @@ li > label {
     width: 226px;
 }
 
-.edit-text-input {
-    width: 226px;
-}
-
 
 /* COMPLETED */
 
-#completed-tasks label {
+.completed-tasks label {
     text-decoration: line-through;
     color: #888888;
 }
 
 /* EDIT TASK */
 
-ul li input[type=text] {
+ul li input.text-input {
     display: none;
 }
 
-ul li.edit-mode input[type=text] {
+ul li.edit-mode input.text-input {
     display: inline-block;
     width: 224px;
 }
