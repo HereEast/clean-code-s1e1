@@ -38,7 +38,7 @@ body {
     display: flex;
 }
 
-input.text-input {
+.text-input {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -48,9 +48,10 @@ input.text-input {
     background: #ffffff;
     border-radius: 6px;
     color: #888888;
+    display: none;
 }
 
-input.text-input:focus {
+.text-input:focus {
     color: #333333;
 }
 
@@ -59,7 +60,6 @@ input.text-input:focus {
     display: inline-block;
     flex-grow: 1;
 }
-
 
 ul {
     margin: 0;
@@ -77,11 +77,11 @@ li {
     list-style: none;
 }
 
-input.checkbox {
+.checkbox {
     margin: 0 10px;
 }
 
-label.task-name {
+.task-name {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
@@ -90,11 +90,8 @@ label.task-name {
 
 /* EDIT TASK */
 
-input.text-input  {
-    display: none;
-}
 
-.edit-mode input.text-input {
+.edit-mode .text-input {
     display: inline-block;
     width: 224px;
 }
