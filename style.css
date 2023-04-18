@@ -64,6 +64,8 @@
     display: flex;
 }
 
+/* Button */
+
 .button {
     background: none;
     border: 0px;
@@ -76,6 +78,16 @@
 
 .button:hover {
     color: #3a3a3a;
+}
+
+.button__img {
+    height: 2em;
+    transform: rotateZ(45deg);
+    transition: transform 200ms ease-in;
+}
+
+.button__img:hover {
+    transform: rotateZ(0);
 }
 
 /* Task List */
@@ -126,16 +138,6 @@
 
 .item__input {
     width: 226px;
-}
-
-.button__image--delete {
-    height: 2em;
-    transform: rotateZ(45deg);
-    transition: transform 200ms ease-in;
-}
-
-.button__image--delete:hover {
-    transform: rotateZ(0);
 }
 
 /* New */
