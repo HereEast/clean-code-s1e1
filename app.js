@@ -34,11 +34,10 @@ function createNewTaskElement(taskString) {
   const deleteButton = document.createElement("button");
   deleteButton.classList.add("button", "button--delete");
 
-  const deleteButtonImg = document.createElement("img");
-  deleteButtonImg.classList.add("button__img");
-  deleteButtonImg.src = "./remove.svg";
+  const deleteButtonIcon = document.createElement("span");
+  deleteButtonIcon.classList.add("icon");
 
-  deleteButton.append(deleteButtonImg);
+  deleteButton.append(deleteButtonIcon);
   listItem.append(checkbox, label, editInput, editButton, deleteButton);
 
   return listItem;
